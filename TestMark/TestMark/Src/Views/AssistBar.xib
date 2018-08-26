@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AssistBar">
+            <rect key="frame" x="0.0" y="0.0" width="1115" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="666" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6d-ij-EvM">
+                    <rect key="frame" x="1078" y="9" width="32" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="bar_keyboard"/>
+                    <connections>
+                        <action selector="hidekeyboard:" destination="iN0-l3-epB" eventType="touchUpInside" id="bi7-HQ-kZI"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="390-bj-xKq">
+                    <rect key="frame" x="0.0" y="0.0" width="1073" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SQJ-mp-LXd">
+                            <rect key="frame" x="10" y="0.0" width="1040" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO8-fW-SJ5">
+                                    <rect key="frame" x="0.0" y="9" width="32" height="32"/>
+                                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                    <state key="normal" image="bar_image"/>
+                                    <connections>
+                                        <action selector="tapImage:" destination="iN0-l3-epB" eventType="touchUpInside" id="L2x-tm-g1Z"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnw-ID-Usn">
+                                    <rect key="frame" x="42" y="9" width="32" height="32"/>
+                                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                    <state key="normal" image="bar_link"/>
+                                    <connections>
+                                        <action selector="tapLink:" destination="iN0-l3-epB" eventType="touchUpInside" id="1xn-ch-C5s"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="de1-sK-Kkn">
+                                    <rect key="frame" x="84" y="9" width="32" height="32"/>
+                                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                    <state key="normal" image="bar_header"/>
+                                    <connections>
+                                        <action selector="tapHeader:" destination="iN0-l3-epB" eventType="touchUpInside" id="asD-oP-aWt"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAL-8s-mD3">
+                                    <rect key="frame" x="126" y="9" width="32" height="32"/>
+                                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                    <state key="normal" image="bar_bold"/>
+                                    <connections>
+                                        <action selector="tapBold:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xws-gO-KED"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lya-98-Vhx">
+                                    <rect key="frame" x="168" y="9" width="32" height="32"/>
+                                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                    <state key="normal" image="bar_italic"/>
+                                    <connections>
+                                        <action selector="tapItalic:" destination="iN0-l3-epB" eventType="touchUpInside" id="AvL-is-dTG"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0J-Px-L0s">
+                                    <rect key="frame" x="210" y="9" width="32" height="32"/>
+                                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                    <state key="normal" image="bar_deleteLine"/>
+                                    <connections>
+                                        <action selector="tapDeletion:" destination="iN0-l3-epB" eventType="touchUpInside" id="iU4-pF-Es4"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhE-jN-Yio">
+                                    <rect key="frame" x="252" y="9" width="32" height="32"/>
+                                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                    <state key="normal" image="bar_quote"/>
+                                    <connections>
+                                        <action selector="tapQuote:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wpw-4v-HEM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeJ-mm-wrl">
+                                    <rect key="frame" x="294" y="9" width="32" height="32"/>
+                                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                    <state key="normal" image="bar_code"/>
+                                    <connections>
+                                        <action selector="tapCode:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xi3-Da-0dQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obu-8o-Jlo">
+                                    <rect key="frame" x="336" y="10" width="32" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="@"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="eS3-sg-DGG"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJC-Y5-6Oo">
+                                    <rect key="frame" x="378" y="10" width="32" height="30"/>
+                                    <state key="normal" title="\"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="6L5-Mw-7tQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCI-jL-mWj">
+                                    <rect key="frame" x="420" y="10" width="32" height="30"/>
+                                    <state key="normal" title="`"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="5i2-up-HKF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaG-w9-vWN">
+                                    <rect key="frame" x="462" y="10" width="32" height="30"/>
+                                    <state key="normal" title="("/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="ayB-UE-isO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJh-Uo-oHb">
+                                    <rect key="frame" x="504" y="10" width="32" height="30"/>
+                                    <state key="normal" title=")"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nym-TQ-APp"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kt4-gV-aUs">
+                                    <rect key="frame" x="546" y="10" width="32" height="30"/>
+                                    <state key="normal" title="["/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="cot-Lp-OVZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvs-Up-rwf">
+                                    <rect key="frame" x="588" y="10" width="32" height="30"/>
+                                    <state key="normal" title="]"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="N3P-s4-UvS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-wq-kV7">
+                                    <rect key="frame" x="630" y="10" width="32" height="30"/>
+                                    <state key="normal" title="|"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="48y-3F-eqX"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTl-yf-EZb">
+                                    <rect key="frame" x="672" y="10" width="32" height="30"/>
+                                    <state key="normal" title="#"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="ms1-GJ-doz"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXl-lC-Ph2">
+                                    <rect key="frame" x="714" y="10" width="32" height="30"/>
+                                    <state key="normal" title="*"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="nWt-Af-fg5"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTH-vd-0gl">
+                                    <rect key="frame" x="756" y="10" width="32" height="30"/>
+                                    <state key="normal" title="="/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="aaA-F8-vcV"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBf-Zt-whb">
+                                    <rect key="frame" x="798" y="10" width="32" height="30"/>
+                                    <state key="normal" title="+"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="6kf-4O-Wlw"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcw-wF-h38">
+                                    <rect key="frame" x="840" y="10" width="32" height="30"/>
+                                    <state key="normal" title="-"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="WPh-rQ-N98"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83k-NQ-Svo">
+                                    <rect key="frame" x="882" y="10" width="32" height="30"/>
+                                    <state key="normal" title="/"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="OzB-4g-co0"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQ1-ru-d9P">
+                                    <rect key="frame" x="924" y="10" width="32" height="30"/>
+                                    <state key="normal" title="?"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="fYc-MK-2h1"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRf-fo-2gE">
+                                    <rect key="frame" x="966" y="10" width="32" height="30"/>
+                                    <state key="normal" title="&lt;"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="hew-ai-nQz"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsU-EF-Mfh">
+                                    <rect key="frame" x="1008" y="10" width="32" height="30"/>
+                                    <state key="normal" title="&gt;"/>
+                                    <connections>
+                                        <action selector="tapChar:" destination="iN0-l3-epB" eventType="touchUpInside" id="8i7-42-Fki"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="SQJ-mp-LXd" firstAttribute="centerY" secondItem="390-bj-xKq" secondAttribute="centerY" id="4Xh-dR-Ugt"/>
+                        <constraint firstAttribute="bottom" secondItem="SQJ-mp-LXd" secondAttribute="bottom" id="Nj4-wo-OLe"/>
+                        <constraint firstItem="SQJ-mp-LXd" firstAttribute="leading" secondItem="390-bj-xKq" secondAttribute="leading" constant="10" id="RVB-XZ-Hzm"/>
+                        <constraint firstItem="SQJ-mp-LXd" firstAttribute="top" secondItem="390-bj-xKq" secondAttribute="top" id="Swe-Yy-ymz"/>
+                        <constraint firstAttribute="trailing" secondItem="SQJ-mp-LXd" secondAttribute="trailing" constant="10" id="rfV-AS-e9D"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l6d-ij-EvM" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="DXg-im-vxY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="l6d-ij-EvM" secondAttribute="trailing" constant="5" id="NES-JC-Bzc"/>
+                <constraint firstItem="390-bj-xKq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ui8-Tm-KNn"/>
+                <constraint firstItem="390-bj-xKq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Wdb-ro-iax"/>
+                <constraint firstItem="l6d-ij-EvM" firstAttribute="leading" secondItem="390-bj-xKq" secondAttribute="trailing" constant="5" id="eVR-Pi-U5Q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="390-bj-xKq" secondAttribute="bottom" id="evf-zg-PYS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="stackView" destination="SQJ-mp-LXd" id="9vW-Ym-7Pt"/>
+            </connections>
+            <point key="canvasLocation" x="-2008.5" y="228"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bar_bold" width="32" height="32"/>
+        <image name="bar_code" width="32" height="32"/>
+        <image name="bar_deleteLine" width="32" height="32"/>
+        <image name="bar_header" width="32" height="32"/>
+        <image name="bar_image" width="32" height="32"/>
+        <image name="bar_italic" width="32" height="32"/>
+        <image name="bar_keyboard" width="32" height="32"/>
+        <image name="bar_link" width="32" height="32"/>
+        <image name="bar_quote" width="32" height="32"/>
+    </resources>
+</document>
